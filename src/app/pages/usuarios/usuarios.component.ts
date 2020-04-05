@@ -6,6 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./usuarios.component.scss']
 })
 export class UsuariosComponent implements OnInit {
+  estados: string[] = ['Negativo', 'Sospechoso', 'Positivo'];
 
   constructor() { }
 
