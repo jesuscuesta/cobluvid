@@ -9,9 +9,11 @@ import { HeaderComponent } from './shared/components/header/header.component';
 
 import { MatToolbarModule } from '@angular/material/toolbar';
 import { MenuComponent } from './shared/components/menu/menu.component';
+import { LoginComponent } from './shared/components/login/login.component';
+import { UsuariosComponent } from './pages/usuarios/usuarios.component';
 
 @NgModule({
-  declarations: [AppComponent, HeaderComponent, MenuComponent],
+  declarations: [AppComponent, HeaderComponent, MenuComponent, LoginComponent, UsuariosComponent],
   imports: [
     BrowserModule,
     AppRoutingModule,
