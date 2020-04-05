@@ -11,14 +11,24 @@ import { MatToolbarModule } from '@angular/material/toolbar';
 import { MenuComponent } from './shared/components/menu/menu.component';
 import { LoginComponent } from './shared/components/login/login.component';
 import { UsuariosComponent } from './pages/usuarios/usuarios.component';
+import { BuscadorComponent } from './shared/components/buscador/buscador.component';
+import { MatRadioModule } from '@angular/material/radio';
 
 @NgModule({
-  declarations: [AppComponent, HeaderComponent, MenuComponent, LoginComponent, UsuariosComponent],
+  declarations: [
+    AppComponent,
+    HeaderComponent,
+    MenuComponent,
+    LoginComponent,
+    UsuariosComponent,
+    BuscadorComponent,
+  ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
-    MatToolbarModule
+    MatToolbarModule,
+    MatRadioModule,
   ],
   providers: [],
   bootstrap: [AppComponent],

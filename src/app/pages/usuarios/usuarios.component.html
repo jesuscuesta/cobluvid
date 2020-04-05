@@ -1,1 +1,85 @@
-<p>usuarios works!</p>
+<div class="page">
+  <app-buscador></app-buscador>
+</div>
+
+<div class="page">
+  <table>
+    <tr>
+      <th>ID</th>
+      <th>Ubicación</th>
+      <th>Estado</th>
+    </tr>
+    <tr>
+      <td>alfa123</td>
+      <td>Madrid</td>
+      <td>
+        <mat-radio-group
+          aria-labelledby="example-radio-group-label"
+          class="example-radio-group"
+        >
+          <mat-radio-button
+            class="example-radio-button"
+            *ngFor="let season of estados"
+            [value]="season"
+          >
+            {{ season }}
+          </mat-radio-button>
+        </mat-radio-group>
+      </td>
+    </tr>
+    <tr>
+      <td>gama1234</td>
+      <td>Barcelona</td>
+      <td>
+        <mat-radio-group
+          aria-labelledby="example-radio-group-label"
+          class="example-radio-group"
+        >
+          <mat-radio-button
+            class="example-radio-button"
+            *ngFor="let season of estados"
+            [value]="season"
+          >
+            {{ season }}
+          </mat-radio-button>
+        </mat-radio-group>
+      </td>
+    </tr>
+    <tr>
+      <td>434brava123</td>
+      <td>Murcia</td>
+      <td>
+        <mat-radio-group
+          aria-labelledby="example-radio-group-label"
+          class="example-radio-group"
+        >
+          <mat-radio-button
+            class="example-radio-button"
+            *ngFor="let season of estados"
+            [value]="season"
+          >
+            {{ season }}
+          </mat-radio-button>
+        </mat-radio-group>
+      </td>
+    </tr>
+    <tr>
+      <td>oelaA123</td>
+      <td>Valencia</td>
+      <td>
+        <mat-radio-group
+          aria-labelledby="example-radio-group-label"
+          class="example-radio-group"
+        >
+          <mat-radio-button
+            class="example-radio-button"
+            *ngFor="let season of estados"
+            [value]="season"
+          >
+            {{ season }}
+          </mat-radio-button>
+        </mat-radio-group>
+      </td>
+    </tr>
+  </table>
+</div>
